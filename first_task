@@ -1,4 +1,3 @@
 #!/bin/bash
 
 echo `cat first_task` | rev
-
