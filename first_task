@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
-echo `cat first_task` | rev
-
+name="$(basename "$(test -L "$0" && readlink "$0" || echo "$0")")"
+cat $name | rev 
