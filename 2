@@ -1,0 +1,7 @@
+#! /bin/bash
+
+read symbol
+if [ $(($symbol + 0)) != $symbol ]
+then echo String
+else echo Integer
+fi
