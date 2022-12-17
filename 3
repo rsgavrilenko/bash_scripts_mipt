@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo -e "1. ls\n2. pwd\n3. ls -l\n4. ps -fe"
+read command
+
+while true
+do
+	case $command in
+		1)
+			ls
+			break
+			;;
+		2)
+			pwd
+			break
+			;;
+		3)
+			ls -l
+			break
+			;;
+		4)
+			ps -fe
+			break
+			;;
+		*)
+			echo Введите число от 1 до 4
+			read num
+			;;
+	esac
+done
